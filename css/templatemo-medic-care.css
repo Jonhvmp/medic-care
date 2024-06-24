@@ -1,3 +1,9 @@
+/*import */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+/* Version: 1.0 */
+
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -708,11 +714,10 @@ strong {
 }
 
 .highlighted-word {
-  color: #ff6347; /* Pode ajustar a cor conforme necessário */
+  color: var(--primary-color); /* Ajuste a cor conforme necessário */
   font-weight: bold;
   transition: opacity 0.5s ease-in-out;
 }
-
 .hidden {
   opacity: 0;
 }
