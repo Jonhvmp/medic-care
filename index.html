@@ -25,13 +25,6 @@
         <link href="css/owl.theme.default.min.css" rel="stylesheet">
 
         <link href="css/templatemo-medic-care.css" rel="stylesheet">
-<!--
-
-TemplateMo 566 Medic Care
-
-https://templatemo.com/tm-566-medic-care
-
--->
     </head>
     
     <body id="top">
@@ -73,7 +66,7 @@ https://templatemo.com/tm-566-medic-care
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#booking">Booking</a>
+                                <a class="nav-link" href="#booking">Buy Now</a>
                             </li>
 
                             <li class="nav-item">
@@ -374,37 +367,16 @@ https://templatemo.com/tm-566-medic-care
                         <div class="col-lg-8 col-12 mx-auto">
                             <div class="booking-form">
                                 
-                                <h2 class="text-center mb-lg-3 mb-2">Book an appointment</h2>
-                            
-                                <form role="form" action="#booking" method="post">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12">
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Phone: 123-456-7890">
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="date" name="date" id="date" value="" class="form-control">
-                                            
-                                        </div>
-
-                                        <div class="col-12">
-                                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Additional Message"></textarea>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                            <button type="submit" class="form-control" id="submit-button">Book Now</button>
-                                        </div>
+                                <h2 class="text-center mb-lg-3 mb-2">
+                                    Achieve a <span id="highlight">Brighter</span>, Healthier Smile Today with Sip-4 Probiotic Whitening Toothpaste!
+                                  </h2>
+                                                                  
+                                    <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                                        <button type="submit" class="form-control"
+                                        id="submit-button">
+                                        <a id="button-paypal" href="https://www.paypal.com/ncp/payment/G2CX2YKLYDN7Q"
+                                         >Buy Now with PayPal</a></button>
                                     </div>
-                                </form>
-
                             </div>
                         </div>
 
@@ -478,12 +450,25 @@ https://templatemo.com/tm-566-medic-care
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/scrollspy.min.js"></script>
         <script src="js/custom.js"></script>
-<!--
 
-TemplateMo 566 Medic Care
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const words = ['Brighter', 'Radiant', 'Whiter'];
+              let currentWordIndex = 0;
+              const highlightElement = document.getElementById('highlight');
+          
+              setInterval(() => {
+                highlightElement.classList.add('hidden');
+          
+                setTimeout(() => {
+                  currentWordIndex = (currentWordIndex + 1) % words.length;
+                  highlightElement.textContent = words[currentWordIndex];
+                  highlightElement.classList.remove('hidden');
+                }, 500);
+              }, 3000); // Muda a palavra a cada 3 segundos
+            });
+          </script>
+          
 
-https://templatemo.com/tm-566-medic-care
-
--->
     </body>
 </html>
