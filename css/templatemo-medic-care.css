@@ -696,6 +696,61 @@ strong {
   content: "\f138";
 }
 
+
+/*---------------------------------------
+  Products
+-----------------------------------------*/
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+#paste-red{
+  color: red;
+  background-color: transparent;
+  border: solid 1px red;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+#paste-red:hover{
+  color: white;
+  background-color: red;
+}
+
+.sp-red{
+  color: red;
+  text-decoration: none;
+}
+
+.sp-red:hover{
+  color: white;
+}
+
+#paste-blue{
+  color: var(--primary-color);
+  background-color: transparent;
+  border: solid 1px var(--primary-color);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+#paste-blue:hover{
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.sp-blue{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.sp-blue:hover{
+  color: white;
+}
+
+
 /*---------------------------------------
   BOOKING FORM            
 -----------------------------------------*/
