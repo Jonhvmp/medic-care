@@ -15,6 +15,8 @@
         
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/css/bootstrap.min.css" rel="stylesheet">
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
@@ -84,7 +86,7 @@
                 </div>
             </nav>
 
-            <section class="hero" id="hero">
+            <section class="hero section" data-delay="0s" id="hero">
                 <div class="container">
                     <div class="row">
 
@@ -130,7 +132,7 @@
                 </div>
             </section>
 
-            <section class="section-padding" id="about">
+            <section class="section-padding section" data-delay="0.5s" id="about">
                 <div class="container">
                     <div class="row">
                         
@@ -152,7 +154,7 @@
                 </div>
             </section>
 
-            <section class="gallery">
+            <section class="gallery section" data-delay="1s">
                 <div class="container">
                     <div class="row">
 
@@ -168,7 +170,7 @@
                 </div>
             </section>
 
-            <section class="section-padding pb-0" id="timeline">
+            <section class="section-padding pb-0 section" data-delay="1.5s" id="timeline">
                 <div class="container">
                     <div class="row">
 
@@ -260,10 +262,9 @@
                 </div>
             </section>
 
-            <section class="section-padding pb-0" id="reviews">
+            <section class="section-padding pb-0 section" data-delay="2s" id="reviews">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-12">
                             <h2 class="text-center mb-lg-5 mb-4">Our Clients</h2>
 
@@ -356,15 +357,13 @@
                                         <span class="text-muted">Satisfied!</span>
                                     </figcaption>
                                 </figure>
-                               
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
 
-            <section class="section-padding" id="product" style="padding-bottom: 40px;">
+            <section class="section-padding section" data-delay="2.5s" id="product">
                 <div class="container">
                     <div class="card-group">
                           <div class="card-body">
@@ -394,7 +393,7 @@
                 </div>
             </section>
 
-            <section class="section-padding" id="booking" style="padding-top: 40px;padding-bottom: 40px;">
+            <section class="section-padding section" data-delay="3s" id="booking"">
                 <div class="container">
                     <div class="row">
                     
@@ -482,23 +481,6 @@
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/scrollspy.min.js"></script>
         <script src="js/custom.js"></script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const words = ['Brighter', 'Radiant', 'Whiter'];
-              let currentWordIndex = 0;
-              const highlightElement = document.getElementById('highlight');
-          
-              setInterval(() => {
-                highlightElement.classList.add('hidden');
-          
-                setTimeout(() => {
-                  currentWordIndex = (currentWordIndex + 1) % words.length;
-                  highlightElement.textContent = words[currentWordIndex];
-                  highlightElement.classList.remove('hidden');
-                }, 500);
-              }, 3000); // Muda a palavra a cada 3 segundos
-            });
-          </script>          
+        <script src="js/script.js"></script>        
     </body>
 </html>
